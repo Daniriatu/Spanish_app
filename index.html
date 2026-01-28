@@ -3,15 +3,20 @@
     <head>
         <meta charset="UTF-8" />
         <title>Spanish Learning App</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="index.css" />
     </head>
     <body>
-        <div class="header">
+        <header></header>
+        <main>
             <img src="/public/logo.svg" alt="logo" class="logo" />
-        </div>
-        <div class="container">
-            <div>
-                <h1 class="title">跟TED练西语</h1>
+            <h1 class="title">跟TED练西语</h1>
+            <section>
                 <ul class="property-list">
                     <li class="property">
                         <span class="property-type">级别</span>
@@ -42,143 +47,400 @@
                         <span class="property-info">💬 阿根廷口音</span>
                     </li>
                 </ul>
-            </div>
-            <h3>外语学习六步法🌟</h3>
+            </section>
 
-            <div class="first-step">
-                <h4>步骤一：盲听理解大意</h4>
+            <section class="step-card first-step">
+                <div class="step-badge">Paso 01</div>
+                <h3 class="step-title">步骤一：盲听理解大意</h3>
 
+                <div class="instruction-bubble">
+                    <p>
+                        <strong>🎧 训练指南：</strong>
+                        无字幕观看视频两遍。第一遍抓大意完成选择题；第二遍留意陌生词汇并尝试听写。
+                    </p>
+                </div>
+
+                <div class="video-container">
+                    <video
+                        src="/public/video.mp4"
+                        muted
+                        controls
+                        class="styled-video"
+                    ></video>
+                </div>
+
+                <div class="quiz-container">
+                    <div class="question-block">
+                        <p class="question-text">
+                            1. ¿Cuál es la idea principal del texto?
+                        </p>
+                        <div class="options-grid">
+                            <label class="option-item">
+                                <input type="radio" name="q1" value="a" />
+                                <span class="option-label"
+                                    >A) Las carreras técnicas tienen más futuro
+                                    que las artísticas.</span
+                                >
+                            </label>
+                            <label class="option-item">
+                                <input type="radio" name="q1" value="b" />
+                                <span class="option-label"
+                                    >B) Es importante elegir una carrera bien
+                                    remunerada.</span
+                                >
+                            </label>
+                            <label class="option-item">
+                                <input type="radio" name="q1" value="c" />
+                                <span class="option-label"
+                                    >C) Las personas deben adaptarse a un futuro
+                                    laboral cambiante.</span
+                                >
+                            </label>
+                            <label class="option-item">
+                                <input type="radio" name="q1" value="d" />
+                                <span class="option-label"
+                                    >D) Las máquinas no podrán reemplazar a los
+                                    humanos.</span
+                                >
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="question-block">
+                        <p class="question-text">
+                            2. ¿Qué sugiere el autor ante los cambios laborales?
+                        </p>
+                        <div class="options-grid">
+                            <label class="option-item">
+                                <input type="radio" name="q2" value="a" />
+                                <span class="option-label"
+                                    >A) Especializarse cuanto antes en un solo
+                                    campo.</span
+                                >
+                            </label>
+                            <label class="option-item">
+                                <input type="radio" name="q2" value="b" />
+                                <span class="option-label"
+                                    >B) Aceptar la transformación y explorar
+                                    diferentes caminos.</span
+                                >
+                            </label>
+                            <label class="option-item">
+                                <input type="radio" name="q2" value="c" />
+                                <span class="option-label"
+                                    >C) Ignorar los cambios y continuar con lo
+                                    que sabemos.</span
+                                >
+                            </label>
+                            <label class="option-item">
+                                <input type="radio" name="q2" value="d" />
+                                <span class="option-label"
+                                    >D) Aprender a utilizar robots para evitar
+                                    el desempleo.</span
+                                >
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="step-card">
+                <div class="step-badge">Paso 02</div>
+                <h3 class="step-title">步骤二：听力填空</h3>
+
+                <div class="cloze-container">
+                    <p>
+                        Estiman que, dentro de 15 a 25 años,
+                        <span class="input-wrapper"
+                            >(1)<input
+                                type="text"
+                                class="cloze-input"
+                                style="width: 100px"
+                        /></span>
+                        las carreras y trabajos que existen hoy, en la manera en
+                        que existen, no van a estar más. Y que muchos de los que
+                        están en estos momentos, dentro de unas décadas, van a
+                        <span class="input-wrapper"
+                            >(2)<input
+                                type="text"
+                                class="cloze-input"
+                                style="width: 120px"
+                        /></span>
+                        por robots con
+                        <span class="input-wrapper"
+                            >(3)<input
+                                type="text"
+                                class="cloze-input"
+                                style="width: 150px" /></span
+                        >. Entonces, ¿qué hacemos
+                        <span class="input-wrapper"
+                            >(4)<input
+                                type="text"
+                                class="cloze-input"
+                                style="width: 90px" /></span
+                        >? ¿<span class="input-wrapper"
+                            >(5)<input
+                                type="text"
+                                class="cloze-input"
+                                style="width: 110px" /></span
+                        >,
+                        <span class="input-wrapper"
+                            >(6)<input
+                                type="text"
+                                class="cloze-input"
+                                style="width: 90px" /></span
+                        >, no hacemos nada? Déjenme hacerles una
+                        <span class="input-wrapper"
+                            >(7)<input
+                                type="text"
+                                class="cloze-input"
+                                style="width: 100px" /></span
+                        >: no
+                        <span class="input-wrapper"
+                            >(8)<input
+                                type="text"
+                                class="cloze-input"
+                                style="width: 80px"
+                        /></span>
+                        una sola opción, porque todos tenemos
+                        <span class="input-wrapper"
+                            >(9)<input
+                                type="text"
+                                class="cloze-input"
+                                style="width: 130px"
+                        /></span>
+                        por mucho más de una cosa y, por lo tanto, por mucho más
+                        de una carrera,
+                        <span class="input-wrapper"
+                            >(10)<input
+                                type="text"
+                                class="cloze-input"
+                                style="width: 100px" /></span
+                        >, oficio o trabajo. Algunos hemos aprendido que
+                        teníamos que elegir una sola cosa para toda la vida, y
+                        si bien en algunos casos esto
+                        <span class="input-wrapper"
+                            >(11)<input
+                                type="text"
+                                class="cloze-input"
+                                style="width: 90px" /></span
+                        >, de acuerdo a la realidad todos cambiamos.
+                        <span class="input-wrapper"
+                            >(12)<input
+                                type="text"
+                                class="cloze-input"
+                                style="width: 90px"
+                        /></span>
+                        cambia, y la decisión que yo tome en un momento de mi
+                        vida no necesariamente tiene que ser
+                        <span class="input-wrapper"
+                            >(13)<input
+                                type="text"
+                                class="cloze-input"
+                                style="width: 80px"
+                        /></span>
+                        o
+                        <span class="input-wrapper"
+                            >(14)<input
+                                type="text"
+                                class="cloze-input"
+                                style="width: 90px"
+                        /></span>
+                        con mis necesidades y mis
+                        <span class="input-wrapper"
+                            >(15)<input
+                                type="text"
+                                class="cloze-input"
+                                style="width: 120px" /></span
+                        >.
+                    </p>
+                </div>
+
+                <details class="transcript-details">
+                    <summary class="transcript-summary">
+                        <span class="summary-text"
+                            >📜 查看完整录音稿与答案</span
+                        >
+                        <span class="summary-icon">▼</span>
+                    </summary>
+                    <div class="transcript-content">
+                        <p>
+                            Estiman que, dentro de 15 a 25 años, gran parte de
+                            las carreras y trabajos que existen hoy, en la
+                            manera en que existen, no van a estar más. Y que
+                            muchos de los que están en estos momentos, dentro de
+                            unas décadas, van a ser reemplazados por robots con
+                            inteligencia artificial. Entonces, ¿qué hacemos
+                            frente a esto? ¿Nos estresamos, nos deprimimos, no
+                            hacemos nada? Déjenme hacerles una sugerencia: no se
+                            queden con una sola opción, porque todos tenemos
+                            gustos e intereses por mucho más de una cosa y, por
+                            lo tanto, por mucho más de una carrera, ocupación,
+                            oficio o trabajo. Algunos hemos aprendido que
+                            teníamos que elegir una sola cosa para toda la vida,
+                            y si bien en algunos casos esto funciona, de acuerdo
+                            a la realidad todos cambiamos. Lo externo cambia, y
+                            la decisión que yo tome en un momento de mi vida no
+                            necesariamente tiene que ser afín o coherente con
+                            mis necesidades y mis posibilidades actuales.
+                        </p>
+                    </div>
+                </details>
+            </section>
+            <section class="step-card">
+                <h3 class="step-header">步骤三：词汇精讲精练</h3>
+
+                <div class="vocab-item">
+                    <div class="vocab-main">
+                        <span class="word">Estimar</span>
+                        <span class="meaning">估计、预测</span>
+                        <span class="usage">常用于未来趋势预测。</span>
+                    </div>
+                    <div class="quiz-box">
+                        <p>❓ 怎么说：估计人口将会增长20%。</p>
+                        <details class="answer-toggle">
+                            <summary>🌰 查看参考例句</summary>
+                            <div class="answer-content">
+                                <span>
+                                    Se estima que la población crecerá un 20%.
+                                </span>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="vocab-item">
+                    <div class="vocab-main">
+                        <span class="word">Carrera</span>
+                        <span class="meaning">专业、职业道路</span>
+                        <span class="usage"
+                            >指大学所学专业或长期职业方向。</span
+                        >
+                    </div>
+                    <div class="quiz-box">
+                        <p>❓ 怎么说：你学什么专业？</p>
+                        <details class="answer-toggle">
+                            <summary>🌰 查看参考例句</summary>
+                            <div class="answer-content">
+                                <span> ¿Qué carrera estás estudiando? </span>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </section>
+            <section class="step-card">
+                <h3 class="step-header">步骤四：跟读模仿</h3>
                 <div class="instruction">
-                    <p>无字幕看视频两遍：</p>
-                    <p>第1遍：抓大意，完成选择题</p>
-                    <p>第2遍：留意陌生词汇和表达，可做听写。</p>
+                    <p>跟读练习，建议使用影子跟读法，并录音对比。</p>
                 </div>
-                <b>视频: </b>
 
-                <video
-                    src="/public/video.mp4"
-                    autoplay="flase"
-                    controls
-                ></video>
-                <div class="question">
-                    <b>1. ¿Cuál es la idea principal del texto?</b>
-                    <ul class="options">
-                        <li>
-                            <input type="radio" />
-                            <label for="a"
-                                >A) Las carreras técnicas tienen más futuro que
-                                las artísticas.
-                            </label>
-                        </li>
-                        <li>
-                            <input type="radio" />
-                            <label for="b"
-                                >B) Es importante elegir una carrera bien
-                                remunerada desde el principio.
-                            </label>
-                        </li>
-                        <li>
-                            <input type="radio" />
-                            <label for="c"
-                                >C) Las personas deben adaptarse a un futuro
-                                laboral cambiante.
-                            </label>
-                        </li>
-                        <li>
-                            <input type="radio" />
-                            <label for="d"
-                                >D) Las máquinas no podrán reemplazar nunca a
-                                los seres humanos.
-                            </label>
-                        </li>
-                    </ul>
+                <div class="shadow-reading-text">
+                    <p>
+                        Estiman que, dentro de 15 a 25 años, gran parte de las
+                        carreras y trabajos que existen hoy, en la manera en que
+                        existen, no van a estar más. Y que muchos de los que
+                        están en estos momentos, dentro de unas décadas, van a
+                        ser reemplazados por robots con inteligencia artificial.
+                        Entonces, ¿qué hacemos frente a esto? ¿Nos estresamos,
+                        nos deprimimos, no hacemos nada? Déjenme hacerles una
+                        sugerencia: no se queden con una sola opción, porque
+                        todos tenemos gustos e intereses por mucho más de una
+                        cosa y, por lo tanto, por mucho más de una carrera,
+                        ocupación, oficio o trabajo. Algunos hemos aprendido que
+                        teníamos que elegir una sola cosa para toda la vida, y
+                        si bien en algunos casos esto funciona, de acuerdo a la
+                        realidad todos cambiamos. Lo externo cambia, y la
+                        decisión que yo tome en un momento de mi vida no
+                        necesariamente tiene que ser afín o coherente con mis
+                        necesidades y mis posibilidades actuales.
+                    </p>
                 </div>
-                <div class="question">
-                    <b>
-                        2. ¿Qué sugiere el autor como respuesta ante los cambios
-                        en el mundo laboral?
-                    </b>
-                    <ul class="options">
-                        <li>
-                            <input type="radio" />
-                            <label for="a"
-                                >A) Que cada persona debería especializarse
-                                cuanto antes en un solo campo para tener
-                                estabilidad.
-                            </label>
-                        </li>
-                        <li>
-                            <input type="radio" />
-                            <label for="b"
-                                >B) Que aceptemos la transformación laboral y
-                                exploremos diferentes caminos según nuestros
-                                intereses personales.
-                            </label>
-                        </li>
-                        <li>
-                            <input type="radio" />
-                            <label for="c"
-                                >C) Que la mejor opción es ignorar los cambios y
-                                continuar con lo que ya sabemos hacer.
-                            </label>
-                        </li>
-                        <li>
-                            <input type="radio" />
-                            <label for="d"
-                                >D) Que aprendamos a utilizar robots para evitar
-                                quedarnos sin empleo.
-                            </label>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            </section>
 
-            <h3>步骤二：听力填空</h3>
-            <p>
-                Estiman que, dentro de 15 a 25 años, (1)<input type="text" />
-                las carreras y trabajos que existen hoy, en la manera en que
-                existen, no van a estar más. Y que muchos de los que están en
-                estos momentos, dentro de unas décadas, van a (2)<input
-                    type="text"
-                />
-                por robots con (3)<input type="text" /> Entonces, ¿qué hacemos
-                (4)<input type="text" />? ¿(5)<input type="text" />, (6)<input
-                    type="text"
-                />, no hacemos nada? Déjenme hacerles una (7)<input
-                    type="text"
-                />: no (8)<input type="text" /> una sola opción, porque todos
-                tenemos (9)<input type="text" /> por mucho más de una cosa y,
-                por lo tanto, por mucho más de una carrera, (10)<input
-                    type="text"
-                />, oficio o trabajo. Algunos hemos aprendido que teníamos que
-                elegir una sola cosa para toda la vida, y si bien en algunos
-                casos esto (11)<input type="text" />, de acuerdo a la realidad
-                todos cambiamos. (12)<input type="text" /> cambia, y la decisión
-                que yo tome en un momento de mi vida no necesariamente tiene que
-                ser (13)<input type="text" /> o (14)<input type="text" /> con
-                mis necesidades y mis (15)<input type="text" />.
-            </p>
-            <h3>录音稿</h3>
-            <p>
-                Estiman que, dentro de 15 a 25 años, gran parte de las carreras
-                y trabajos que existen hoy, en la manera en que existen, no van
-                a estar más. Y que muchos de los que están en estos momentos,
-                dentro de unas décadas, van a ser reemplazados por robots con
-                inteligencia artificial. Entonces, ¿qué hacemos frente a esto?
-                ¿Nos desesperamos, nos deprimimos, no hicimos nada? ¡No! Déjenme
-                hacerles una sugerencia: no se queden con una sola opción,
-                porque todos tenemos gustos e intereses por mucho más de una
-                cosa, y por lo tanto, por mucho más de una carrera, ocupación,
-                oficio o trabajo. Algunos hemos aprendido que teníamos que
-                elegir una sola cosa para toda la vida, y si bien en algunos
-                casos esto funciona, de acuerdo a la realidad todos cambiamos.
-                Lo externo cambia, y la decisión que yo tome en un momento de mi
-                vida no necesariamente tiene que ser afín o coherente con mis
-                necesidades y mis posibilidades actuales.
-            </p>
-            <a href="https://www.enjoyele.com" target="_blank">
-                <button>开始写作</button>
-            </a>
-        </div>
+            <section class="step-card">
+                <h3 class="step-header">步骤五：输出（成分分析与仿写）</h3>
+
+                <div class="analysis-container">
+                    <div class="original-sentence">
+                        <b>✍️ 原句 1：</b>
+                        <p>
+                            Estiman que, dentro de 15 a 25 años, gran parte de
+                            las carreras y trabajos que existen hoy, en la
+                            manera en que existen, no van a estar más.
+                        </p>
+                    </div>
+
+                    <div class="analysis-box">
+                        <span class="tag">成分分析</span>
+                        <ul>
+                            <li>
+                                <span class="part">“Estiman que...”</span
+                                >：主句（估计……）
+                            </li>
+                            <li>
+                                <span class="part"
+                                    >“dentro de 15 a 25 años”</span
+                                >：时间状语
+                            </li>
+                            <li>
+                                <span class="part">“gran parte de...”</span
+                                >：主语部分
+                            </li>
+                            <li>
+                                <span class="part">“que existen hoy...”</span
+                                >：定语从句，修饰“trabajos”
+                            </li>
+                            <li>
+                                <span class="part">“no van a estar más”</span
+                                >：谓语部分
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="imitation-zone">
+                        <span class="tag blue">🔁 仿写练习</span>
+                        <div class="input-group">
+                            <p>
+                                1. 估计在几年内，许多传统的教学方法将不复存在。
+                            </p>
+                            <input
+                                type="text"
+                                placeholder="在此输入你的西语仿写..."
+                                class="writing-input"
+                            />
+                            <details class="answer-toggle">
+                                <summary>查看参考例句</summary>
+                                <div class="answer-content">
+                                    <span>
+                                        Estiman que, dentro de unos años, muchos
+                                        métodos de enseñanza tradicionales no
+                                        van a estar más.
+                                    </span>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="step-card">
+                <h3 class="step-header">步骤六：AI 辅助写作提升 ⬆️</h3>
+                <div class="ai-writing-box">
+                    <div class="writing-prompt">
+                        <h4>🔥 灵感激发：</h4>
+                        <p>
+                            谈谈你对未来职业发展的看法，特别是人工智能对工作的影响。
+                        </p>
+                        <ul class="prompt-tips">
+                            <li>① 现象：工作的世界在变</li>
+                            <li>② 态度：我们怎么面对这种未来？</li>
+                            <li>③ 选择：人生只做一个职业吗？</li>
+                        </ul>
+                    </div>
+
+                    <button class="ai-btn">✨ 开始 AI 智能批改</button>
+                </div>
+            </section>
+        </main>
     </body>
 </html>
