@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-image: url("/public/bg.jpg");
+    background-size: 80%;
+    background-position: bottom;
+    height: 200px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    margin-top: 170px;
+    margin-left: 15%;
+}
+
+.title {
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.property {
+    margin-bottom: 5px;
+}
+
+.property-type {
+    margin-right: 50px;
+    color: #707070;
+    font-size: 12px;
+}
+
+.property-list {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.property-info {
+    color: black;
+    font-size: 12px;
+}
+
+.container {
+    margin: 60px auto 15% auto;
+    width: 40%;
+    min-width: 600px;
+}
+
+.options {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.instruction {
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+.question {
+    margin-bottom: 40px;
+}
+
+video {
+    width: 100%;
+    margin: 10px 0 20px 0;
+}
+
+input {
+    width: 50px;
+}
+
+img {
+    width: 600px;
+}
+
+.blue-bg {
+    background-color: #cbe3f7;
+    border-radius: 3px;
+}
+
+.green-bg {
+    background-color: #ccdbd2;
+    border-radius: 3px;
+}
+
+.pink-bg {
+    background-color: #fce9e7;
+    border-radius: 3px;
+}
