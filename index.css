@@ -4,6 +4,7 @@
     --text-sub: #787774;
     --bg-gray: #f1f1ef;
     --border: #edece9;
+    --underline: rgb(54, 54, 54);
 }
 
 body {
@@ -120,22 +121,42 @@ main {
     border-color: #5b97bd;
 }
 
+/* 基础输入框样式 */
 .cloze-container {
     line-height: 2.2;
     margin-bottom: 20px;
 }
+
 .cloze-input {
     border: none;
     border-bottom: 2px solid var(--border);
     background: transparent;
     text-align: center;
-    color: #2b5a83;
+    color: var(--text-main);
     font-size: 1em;
-    transition: 0.3s;
+    padding: 0 5px;
+    transition: all 0.3s;
 }
+
 .cloze-input:focus {
     outline: none;
-    border-bottom-color: var(--primary);
+    border-bottom-color: var(--underline);
+    background: #fff9f9;
+}
+
+/* ✅ 回答正确：变绿 */
+.correct {
+    border-bottom-color: #27ae60;
+    color: #27ae60;
+    background-color: #eafaf1;
+    font-weight: bold;
+}
+
+/* ❌ 回答错误：变红并抖动 */
+.wrong {
+    border-bottom-color: #e74c3c;
+    color: #e74c3c;
+    background-color: #fdedec;
 }
 
 /* 抽屉与折叠 */
@@ -211,6 +232,11 @@ summary:hover {
     padding: 10px 25px;
     border-radius: 6px;
     cursor: pointer;
+}
+
+/* 词汇区 */
+.vocab-item {
+    margin-bottom: 40px;
 }
 
 /* 辅助色 */
